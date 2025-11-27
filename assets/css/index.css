@@ -2,14 +2,14 @@ body {
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
     color: #69382d;
 }
 
 .sleep-section {
     padding: clamp(40px, 5vw, 80px) 20px;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
+    background-color: #fff;
 }
 
 .sleep-section h2 {
@@ -28,7 +28,6 @@ body {
 
 .card {
     background-color: #fff;
-
     padding: clamp(10px, 3vw, 30px);
     /* ❌ Removed border-radius & shadow */
     border-radius: 0;
@@ -94,13 +93,6 @@ body {
 
 .cta-btn:hover {
     background-color: #4e251d;
-}
-
-.about-left h3{
-    font-family: "Great Vibes", cursive;
-    color: #ff6e39;
-    font-size: clamp(28px, 4vw, 42px);
-    line-height: 1.0;
 }
 
 .find-section h2{

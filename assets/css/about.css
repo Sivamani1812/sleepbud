@@ -35,18 +35,23 @@ body {
     flex-direction: column;
 }
 .about-left p {
-    font-size: clamp(14px, 1.8vw, 17px);
-    line-height: 1.7;
+    font-size: clamp(14px, 1.4vw, 15px);
+    line-height: 1.5;
     color: #312e2e;
     text-align: justify;
 }
 
-.about-left h3 {
-    font-family: "Great Vibes", cursive;
-    color: #ff6e39;
-    font-size: clamp(28px, 4vw, 42px);
-    line-height: 1.0;
-}
+
+
+
+/* 
+.about-left h3 span {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #ff6e39; 
+    padding-top: 10px;
+} */
+
 
 .ab-title {
     font-weight: 600;
@@ -61,12 +66,6 @@ body {
     font-weight: 400;
     margin-top: 10px;
 }
-
-/* .about-left p {
-    font-size: clamp(14px, 2.2vw, 18px);
-    line-height: 1.6;
-    text-align: justify;
-} */
 
 .about-left a {
     background: #69382d;
@@ -362,15 +361,15 @@ body {
         transition: all 0.4s ease-in-out;
         color: #69382d;
       }
+
       /* service */
+
       .services {
-        /* width: 70%; */
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 50px;
         row-gap: 80px;
-
         padding: 60px 0px;
       }
       .s-box1 {
@@ -479,15 +478,8 @@ body {
         flex-direction: column;
         gap: 40px;
       }
-      .about-left h3 {
-        color: #ff6e39;
-        font-size: 42px;
-        /* margin-bottom: 20px; */
-      }
-      /* .about-left p {
-        font-size: 24px;
-        color: #312e2e;
-      } */
+     
+     
       .profile {
         padding-left: 30px;
         border-left: 6px solid #69382d;
@@ -722,3 +714,50 @@ body {
           right: 10px;
         }
       }
+
+      .cta {
+  background-color: var(--primary-color);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cta h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffffcc;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+}
+
+.cta a {
+  display: inline-block;
+  background: #ffffff;
+  color: var(--primary-color);
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.cta a:hover {
+  background: var(--primary-color);
+  color: #ffd7d7;
+  transform: scale(1.05);
+}
+
+

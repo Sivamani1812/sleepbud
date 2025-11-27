@@ -19,7 +19,7 @@
         background: url("https://static.wixstatic.com/media/5a3650_98569a49bd7349629cae03540c7b1c60~mv2.webp") no-repeat;
         background-position: center;
         background-size: cover;
-        border-radius: 0px 0px 30px 30px;
+        border-radius: 0px ;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,8 +29,8 @@
         margin: auto;
       }
       .hero-section .container {
-        width: 80%;
-        height: 100%;
+        width: 100%;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,101 +147,134 @@
 
 
       /*  */
-
-      .contact-section {
-  background: #fdf1f5;
+/* Section Layout */
+.contact-section {
   padding: 80px 0;
-  position: relative;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.contact-section::before,
-.contact-section::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(140px);
-  z-index: -1;
+.container-contact {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
-.contact-section::before {
-  width: 350px;
-  height: 350px;
-  background: #ffccd7;
-  top: -80px;
-  left: -90px;
-}
-
-.contact-section::after {
-  width: 350px;
-  height: 350px;
-  background: #ffd3f0;
-  bottom: -90px;
-  right: -80px;
+/* LEFT BOX */
+.contact-left {
+  width: 45%;
 }
 
 .contact-form-box {
-  background: #ffffff;
-  padding: 35px;
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-  transition: 0.3s ease;
-}
-
-.contact-form-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.10);
+  background: #e8c88e;
+  padding: 40px;
+  border-radius: 16px;
 }
 
 .form-heading {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #c4296e;
-}
-
-.form-control {
-  border-radius: 10px;
-  background: #fafafa;
-  border: 1px solid #ddd;
-  padding: 12px 14px;
-}
-
-.form-control:focus {
-  border-color: #e873a9;
-  box-shadow: 0 0 8px rgba(232, 115, 169, 0.4);
-}
-
-.btn-submit {
-  background: linear-gradient(135deg, #ff7bac, #ff4a8f);
-  border: none;
-  color: #fff;
+  color: #fff8f1;
+  font-size: 26px;
   font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 10px;
-  width: 100%;
-  transition: 0.3s ease;
+  margin-bottom: 20px;
 }
 
+/******** FORM ********/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs */
+.form-control,
+.phone-code {
+  background: #fff8f1;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 18px;
+  width: 100%;
+  color: rgba(17, 11, 11, 0.55);
+}
+.form-control::placeholder {
+  color: rgba(17, 11, 11, 0.55);
+}
+
+/* First + Last name row */
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+.input-half {
+  width: 50%;
+}
+
+/* Phone Row */
+.phone-row {
+  display: flex;
+  gap: 12px;
+}
+.phone-code {
+  width: 30%;
+}
+.phone-row input {
+  width: 70%;
+}
+
+/* Button */
+.btn-submit {
+  width: 100%;
+  background: #c98a5a;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
 .btn-submit:hover {
-  background: linear-gradient(135deg, #ff4a8f, #ff2d74);
-  transform: translateY(-3px);
+  background: #a77548;
+}
+
+/******** RIGHT CONTENT ********/
+.contact-right {
+  width: 45%;
+  color: #3a3a3a;
 }
 
 .contact-title {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
-  color: #c4296e;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+}
+.contact-right h1 {
+  color: #69382d;
 }
 
 .contact-desc {
   font-size: 18px;
-  color: #333;
-  line-height: 1.7;
+  line-height: 1.6;
+  opacity: .85;
 }
 
-/* RESPONSIVE FIX */
-@media(max-width: 991px){
-  .contact-title{text-align:center; margin-top:30px;}
-  .contact-desc{text-align:center;}
+/******** MOBILE ********/
+@media(max-width: 768px) {
+  .container-contact {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+  .contact-title {
+    text-align: center;
+  }
+  .contact-desc {
+    text-align: center;
+  }
 }
