@@ -96,6 +96,19 @@ body {
     background-color: #4e251d;
 }
 
+.about-left h3{
+    font-family: "Great Vibes", cursive;
+    color: #ff6e39;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.0;
+}
+
+.find-section h2{
+    font-size: 40px;
+}
+.find-section p{
+   padding-top: 10px;
+}
 
 
 /* footer */
