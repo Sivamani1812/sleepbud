@@ -1098,4 +1098,127 @@ body {
   transform: translateY(-3px);
 }
 
- 
+ .reviews-section {
+  text-align: center;
+  padding: 80px 10%;
+  background: #fffdf9;
+}
+
+.main-title {
+  font-size: 42px;
+  color: #1d746b;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.sub-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 25px;
+  color: #333;
+  opacity: 0.8;
+}
+
+.google-rating {
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: nowrap; /* IMPORTANT — 3 boxes same line */
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.review-card {
+  width: 32%; /* three equal boxes in a row */
+  min-height: 230px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.10);
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  background: #69382d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.stars {
+  color: #FFC300;
+  font-size: 18px;
+}
+
+/* Scroll Animation */
+.review-card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.see-more-btn {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #ff7a00;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.see-more-btn:hover {
+  background: #d96400;
+  transform: translateY(-4px);
+}
+
+
+
+@media (max-width: 900px) {
+  .reviews-container {
+    flex-wrap: wrap;
+  }
+  .review-card {
+    width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .review-card {
+    width: 100%;
+  }
+}

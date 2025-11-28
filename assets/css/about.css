@@ -72,6 +72,29 @@ body {
     font-style: 24px;
     text-align: center;
 }
+.about-left ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-left ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.about-left ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    background-color: #2A2A2A; /* Change color */
+    border-radius: 50%;
+}
+
+
 /* First section: Image left + text right */
 .first-sec .about-right {
     order: 1;
