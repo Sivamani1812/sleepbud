@@ -10,3 +10,9 @@ const footerLinks = document.querySelectorAll(".footer-links a");
        link.classList.remove("animate__animated", "animate__headShake");
      });
    });
+
+
+
+
+
+ 
