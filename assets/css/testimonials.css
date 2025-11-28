@@ -198,15 +198,15 @@ body {
     padding: 1rem;
 }
 
-.h-s-2 .container {
+/* .h-s-2 .container {
     max-width: 1200px;
     width: 100%;
 }
 
 .h-s-2 h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 3vw, 2rem);
     color:#69382d;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -215,8 +215,9 @@ body {
     margin: 0 auto 1.5rem;
     font-size: clamp(0.9rem, 2.2vw, 1.2rem);
     line-height: 1.6;
-    color: #c3aba8;
-}
+    color:#69382d;
+    text-align: justify;
+} */
 
 .h-s-2 .btn {
     background-color: #fff;
@@ -281,16 +282,16 @@ body {
   width: 50%;
 }
 .hero-content h1 {
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(28px, 4vw, 40px);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 18px;
 }
 .hero-content p {
   font-size: clamp(14px, 2vw, 18px);
-  opacity: 0.9;
   line-height: 1.7;
-  margin-bottom: 25px;
+  margin-bottom: 25px; 
+  color: black;
 }
 
 /* CTA Button */
@@ -337,9 +338,9 @@ body {
 }
 
 .h-s-2 h1 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 3vw, 2rem);
     color:#69382d;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -348,7 +349,8 @@ body {
     margin: 0 auto 1.5rem;
     font-size: clamp(0.9rem, 2.2vw, 1.2rem);
     line-height: 1.6;
-    color: #c3aba8;
+    color: #69382d;
+    text-align: justify;
 }
 
 .h-s-2 .btn {
@@ -414,14 +416,13 @@ body {
   width: 50%;
 }
 .hero-content h1 {
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(28px, 4vw, 40px);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 18px;
 }
 .hero-content p {
   font-size: clamp(14px, 2vw, 18px);
-  opacity: 0.9;
   line-height: 1.7;
   margin-bottom: 25px;
 }

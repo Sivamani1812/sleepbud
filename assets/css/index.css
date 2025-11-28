@@ -94,9 +94,15 @@ body {
 .cta-btn:hover {
     background-color: #4e251d;
 }
+.find-section{
+    padding-left: 20px;
+}
 
 .find-section h2{
-    font-size: 40px;
+    font-size: 48px;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 10px;
 }
 .find-section p{
    padding-top: 10px;
@@ -179,4 +185,25 @@ body {
     .social-links a {
         margin: 5px;
     }
+}
+
+
+
+.find-sec-head .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.find-section {
+  width: 38%;
+  text-align: left; /* optional */
+}
+
+.services {
+  width: 62%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
