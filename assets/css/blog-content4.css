@@ -1,0 +1,295 @@
+:root{
+    --cream:#fbefe4;
+    --card:#fff;
+    --accent:#5a3d31;
+    --muted:#6b6b6b;
+    --soft-border:#ead7c0;
+    --green:#00a35c;
+    --highlight:#fff3e0;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--cream);
+    font-family:"Poppins",system-ui,Segoe UI,Roboto,Helvetica,Arial;
+    color:#34291f;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* Page wrapper */
+  .page {
+    max-width:980px;
+    margin:36px auto;
+    padding:80px 18px 60px;
+  }
+
+  /* Card */
+  .post-card{
+    background:var(--card);
+    border-radius:10px;
+    padding:70px;
+    border:1px solid var(--soft-border);
+    box-shadow:0 6px 22px rgba(0,0,0,0.04);
+  }
+
+  /* Meta row */
+  .meta-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:8px;
+  }
+  .meta-row .title-emoji{font-size:20px}
+  .post-title{
+    margin:6px 0 12px;
+    font-size:26px;
+    line-height:1.18;
+    color:var(--accent);
+    font-weight:700;
+  }
+
+  .byline{
+    color:#5a463b;
+    font-size:14px;
+    margin-bottom:16px;
+  }
+
+  /* hero image */
+  .hero{
+    width:100%;
+    border-radius:8px;
+    overflow:hidden;
+    margin:18px 0;
+    max-height:460px;
+  }
+  .hero img{width:100%; height:auto; display:block; object-fit:cover}
+
+  /* highlight summary */
+  .highlight{
+    background:var(--highlight);
+    border-left:4px solid #ff9800;
+    padding:12px 14px;
+    border-radius:6px;
+    color:#765033;
+    margin:12px 0 20px;
+    font-size:15px;
+  }
+
+  /* headings & paragraphs */
+  .post-card h2{
+    font-size:19px;
+    margin-top:22px;
+    color:#36261d;
+  }
+  .post-card p{
+    margin:12px 0;
+    font-size:16px;
+    line-height:1.7;
+    color:#3f342f;
+  }
+
+  /* lists styled */
+  .post-card ul{
+    margin:8px 0 18px 20px;
+    color:#3f342f;
+  }
+  .post-card li{margin:8px 0; font-size:15.5px}
+
+  /* CTA box */
+  .cta-box{
+    margin:22px 0;
+    background:#fff7ee;
+    border:1px solid #f0d9c2;
+    padding:14px;
+    border-radius:8px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .cta-box p{margin:0; font-weight:600; color:#4b2b1a}
+  .cta-box .btn{
+    background:var(--green);
+    color:#fff;
+    padding:10px 16px;
+    border-radius:24px;
+    text-decoration:none;
+    font-weight:600;
+  }
+
+  /* FAQ */
+  .faq{
+    margin-top:20px;
+    border-top:1px dashed #e7d7c6;
+    padding-top:18px;
+  }
+  .faq h3{font-size:18px; margin-bottom:8px}
+  .qa {
+    border-radius:8px;
+    background:#fff;
+    border:1px solid #efe3d5;
+    padding:12px;
+    margin-bottom:10px;
+  }
+  .qa .q {
+    display:flex;
+    justify-content:space-between;
+    cursor:pointer;
+    gap:10px;
+    font-weight:600;
+    color:#3b2b23;
+  }
+  .qa .a {
+    margin-top:10px;
+    display:none;
+    color:#42372f;
+    line-height:1.6;
+  }
+  .qa.open .a{display:block}
+
+  /* bottom stats */
+  .post-stats{
+    display:flex;
+    gap:14px;
+    align-items:center;
+    margin-top:22px;
+    color:#7d6e5f;
+    font-size:14px;
+  }
+
+  .icons{
+    margin-left:auto;
+    display:flex;
+    gap:10px;
+    align-items:center;
+  }
+  .like-btn, .share-btn {
+    background:transparent;
+    border:1px solid #efd9c7;
+    padding:8px 10px;
+    border-radius:10px;
+    cursor:pointer;
+    color:#7a5e4b;
+    font-weight:600;
+  }
+  .like-btn.active { background:#ffdfe7; color:#d33; border-color:#f4cfd6; transform:scale(1.02) }
+
+  /* share popup */
+  .share-popup{
+    position:fixed;
+    z-index:9999;
+    background:#fff;
+    border:1px solid #e6d6c3;
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.12);
+    display:none;
+    min-width:220px;
+  }
+  .share-popup.active{display:block}
+  .share-popup p{margin:0 0 8px; font-weight:600}
+  .share-actions{display:flex; gap:8px; flex-wrap:wrap}
+  .share-actions a{padding:8px 10px; background:#f7f3f0; border-radius:6px; text-decoration:none; color:#4b2b1a; font-weight:600; font-size:13px}
+
+  /* responsive rules */
+  @media (max-width:1024px){
+    .page{padding:20px}
+    .post-card{padding:22px}
+  }
+  @media (max-width:700px){
+    .post-title{font-size:22px}
+    .hero{max-height:320px}
+    .page{margin:20px auto}
+  }
+  @media (max-width:420px){
+    .post-card{padding:16px}
+    .post-title{font-size:20px}
+    .meta-row{font-size:12px}
+  }
+
+  /* simple reveal animation */
+  .reveal {opacity:0; transform:translateY(18px); transition:all .6s cubic-bezier(.2,.9,.2,1)}
+  .reveal.visible{opacity:1; transform:none}
+
+/* Desktop & Tablet — CTA Visible */
+.mobile-cta {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.mobile-cta a {
+  background: var(--cta);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+/* Mobile Floating CTA */
+@media(max-width:480px){
+  .mobile-cta {
+    position: fixed;
+    bottom: 16px;
+    left: 12px;
+    right: 12px;
+    z-index: 9999;
+    margin: 0;
+    pointer-events: auto;
+  }
+
+  .mobile-cta a {
+    width: 100%;
+    font-size: 17px;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  }
+}
+
+
+
+/* Mobile CTA floating at the bottom */
+@media(max-width:480px){
+  .mobile-cta {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 16px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    pointer-events: auto;
+  }
+
+  .mobile-cta a {
+    width: 100%;
+    text-align: center;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: var(--cta);
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .mobile-cta a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  }
+
+  .mobile-cta a:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+}

@@ -79,7 +79,7 @@ body {
 .hero-section h2 {
     font-size: clamp(2rem, 4vw, 3.2rem);
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
     color: #fff;
     padding-top: 80px;
 }
@@ -87,7 +87,6 @@ body {
 .hero-section p {
     font-size: clamp(1rem, 2vw, 1.3rem);
     max-width: 650px;
-    margin-bottom: 1.5rem;
     line-height: 1.7;
     color: #fff;
 }
@@ -112,18 +111,14 @@ body {
 /* Mobile Responsive */
 @media(max-width: 768px) {
     .hero-section {
+        min-height: 60vh;
+    }
+}
+@media(min-width: 769px)(max-width: 992px) {
+    .hero-section {
         min-height: 70vh;
     }
 }
-
-
-
-/* .hero-section h2 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 1rem;
-} */
 
 .hero-section p {
     max-width: 700px;
@@ -161,6 +156,29 @@ body {
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero {
+    flex-wrap: nowrap; /* keep image on right */
+    align-items: center;
+  }
+  .hero-img img {
+    max-width: 300px; /* slightly smaller image for tablet */
+  }
+}
+
+
+.h-s-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 0;
+}
+.hero-content, .hero-image {
+  width: 50%;
+}
+
+
 @media (max-width: 480px) {
     .hero-section h2 {
         font-size: 1.6rem;
@@ -177,6 +195,61 @@ body {
 }
 
 
+
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 60vh;
+        padding: 4rem 1rem 2rem;
+        background-position: right top; /* keep important part visible */
+    }
+
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 992px) {
+    .hero-section {
+        min-height: 65vh;
+        padding: 5rem 2rem 3rem;
+        background-position: center right;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 993px) {
+    .hero-section {
+        min-height: 80vh;
+        background-position: center center;
+        padding: 6rem 3rem 3rem;
+    }
+
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+
+    .hero-section p {
+        font-size: 1.3rem;
+    }
+}
 
 
 

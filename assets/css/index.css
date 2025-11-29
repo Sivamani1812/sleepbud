@@ -20,10 +20,85 @@ body {
     line-height: 1.4;
 }
 
+/* 🟡 Tablet (Min 540px – Max 992px) */
+@media (max-width: 992px) and (min-width: 540px) {
+  
+  .sleep-section {
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .sleep-section h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .sleep-section .cards {
+    display: flex;
+    flex-wrap: wrap; /* 🟢 Important */
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .sleep-section .card {
+    width: 46%; /* 🟢 Perfect for 2 per row */
+    padding: 22px;
+  }
+
+  .sleep-section .card h3 {
+    font-size: 17px;
+  }
+
+  .sleep-section ul li {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .sleep-section .cta-btn {
+    font-size: 17px;
+    margin-top: 30px;
+  }
+}
+
+
+/* 🔵 Mobile (Max 539px) */
+@media (max-width: 539px) {
+  .sleep-section {
+    padding: 50px 15px;
+    display: block;
+  }
+
+  .sleep-section h2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .sleep-section .cards {
+    gap: 18px;
+  }
+
+  .sleep-section .card {
+    width: 100%; 
+    padding: 20px;
+  }
+
+  .sleep-section ul li {
+    font-size: 14px;
+  }
+
+  .sleep-section .cta-btn {
+    font-size: 16px;
+    padding: 10px 18px;
+    margin-top: 30px;
+  }
+}
+
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: clamp(20px, 4vw, 30px);
+    gap: clamp(5px, 3vw, 20px);
+        
 }
 
 .card {
@@ -32,6 +107,11 @@ body {
     /* ❌ Removed border-radius & shadow */
     border-radius: 0;
     box-shadow: none;
+}
+
+.card:nth-child(1) {
+   gap: clamp(2px, 3vw, 10px);
+   padding: clamp(10px, 3vw, 10px);
 }
 
 .card h3 {

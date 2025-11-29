@@ -226,7 +226,7 @@ body {
 /* hero */
 .hero {
   width: 100%;
-  height: 120vh;
+  min-height: 120vh; /* safer than fixed height */
   position: relative;
   overflow: hidden;
   background: linear-gradient(
@@ -235,9 +235,27 @@ body {
       rgba(220, 175, 110, 1.200) 100%
     ),
     url("https://static.wixstatic.com/media/5a3650_75d794a02f724d87a8a640485d7b56c0~mv2.webp")
-      center/cover no-repeat;
+      center center / cover no-repeat;
   background-attachment: scroll;
   border-radius: 0px 0px 20px 20px;
+}
+@media (max-width: 900px) and (min-width: 540px) {
+  .hero {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: right center; /* Tablet ku left bright focus */
+    background-attachment: scroll;
+  }
+}
+
+/* Mobile View Fix */
+@media (max-width: 539px) {
+  .hero {
+    min-height: 90vh;
+    background-size: cover;
+    background-position: right center; /* Bright side mobile ku shift */
+    background-attachment: scroll;
+  }
 }
 .hero-title {
   font-size: 46px;
@@ -332,6 +350,11 @@ body {
     margin: auto;
   }
 }
+
+
+
+
+
 /* about */
 .about {
   width: 100%;
@@ -716,7 +739,7 @@ body {
 }
 
 .cta-container {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -752,6 +775,138 @@ body {
   color: #ffd7d7;
   transform: scale(1.05);
 }
+
+
+/* 🟡 Tablet (Min 540px – Max 992px) */
+@media (max-width: 992px) and (min-width: 540px) {
+
+  .reviews-section {
+    padding: 60px 30px;
+  }
+
+  .reviews-section .main-title {
+    font-size: 32px;
+  }
+
+  .reviews-section .sub-title {
+    font-size: 18px;
+  }
+
+  .reviews-section .description {
+    width: 90%;
+    margin: 0 auto 30px;
+    font-size: 16px;
+  }
+
+  .reviews-container {
+    gap: 20px;
+  }
+
+  .review-card {
+    width: 45%; /* 2 reviews per row */
+    padding: 18px;
+  }
+
+  .review-text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+}
+
+
+/* 🔵 Mobile (Max 539px) */
+@media (max-width: 539px) {
+
+  .reviews-section {
+    padding: 50px 18px;
+    text-align: center;
+  }
+
+  .reviews-section .main-title {
+    font-size: 26px;
+  }
+
+  .reviews-section .sub-title {
+    font-size: 16px;
+  }
+
+  .reviews-section .description {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .review-card {
+    width: 100% !important; /* Full width cards */
+    padding: 18px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .see-more-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 25px;
+    display: inline-block;
+  }
+}
+
+
+
+/* 🟡 Tablet (Min 540px – Max 992px) */
+@media (max-width: 992px) and (min-width: 540px) {
+
+  .find-section {
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .find-section h2 {
+    font-size: 30px;
+  }
+
+  .find-section p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+}
+
+
+/* 🔵 Mobile (Max 539px) */
+@media (max-width: 539px) {
+
+  .find-section {
+    padding: 40px 20px;
+    text-align: center;
+    width: 80%;
+  }
+
+  .find-section h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .find-section p {
+    font-size: 15px;
+    line-height: 1.35;
+    margin-top: 8px;
+  }
+}
+
 
 
 

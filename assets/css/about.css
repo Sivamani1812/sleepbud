@@ -27,6 +27,59 @@ body {
     padding: 0 20px;
 }
 
+.about-hero-section {
+  height: 70vh; 
+  background-image: url("https://static.wixstatic.com/media/5a3650_98569a49bd7349629cae03540c7b1c60~mv2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 00px; /* push image slightly down */
+  display: flex;
+  align-items: center; /* vertically center text */
+}
+
+.about-hero-section .container h2 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media(max-width: 992px) {
+  .about-hero-section {
+    background-position: center 150px;
+  }
+
+  .about-hero-section .container h2 {
+    font-size: 36px;
+  }
+}
+
+
+
+/* Mobile */
+@media(max-width: 600px) {
+  .about-hero-section {
+    background-position: center 100px;
+  }
+
+  .about-hero-section .container h2 {
+    font-size: 28px;
+  }
+}
+
+/* Small mobile */
+@media(max-width: 420px) {
+  .about-hero-section {
+    background-position: center 80px;
+  }
+
+  .about-hero-section .container h2 {
+    font-size: 22px;
+  }
+}
+
+
 
 .about-right img {
     width: 100%;
@@ -76,11 +129,14 @@ body {
     list-style: none;
     padding-left: 0;
 }
+.about-left h4{
+  padding: -10px;
+}
 
 .about-left ul li {
     position: relative;
     padding-left: 25px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .about-left ul li::before {
@@ -198,7 +254,7 @@ body {
 
 
 /* section 2 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 
 body {
     font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
