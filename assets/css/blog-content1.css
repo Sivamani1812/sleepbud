@@ -73,7 +73,7 @@ body {
     border: 1px solid #efe1d4
 }
 
-.hero {
+.hero-blog{
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -81,7 +81,7 @@ body {
     max-height: 480px;
 }
 
-.hero img {
+.hero-blog img {
     width: 100%;
     height: auto;
     display: block;
@@ -338,7 +338,8 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 30px;
+  margin: 30px 0px 30px 0px;
+  
 }
 
 .mobile-cta a {

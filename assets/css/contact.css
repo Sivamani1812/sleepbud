@@ -15,15 +15,17 @@
 
       .hero-section {
         width: 100%;
-        height: 70vh;
+        height: 80vh;
         background: url("https://static.wixstatic.com/media/5a3650_98569a49bd7349629cae03540c7b1c60~mv2.webp") no-repeat;
-        background-position: center;
+        background-position: center -90px;
         background-size: cover;
         border-radius: 0px ;
         display: flex;
         align-items: center;
         justify-content: center;
       }
+
+    
       .container {
         width: 80%;
         margin: auto;

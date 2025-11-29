@@ -114,7 +114,7 @@ body {
         min-height: 60vh;
     }
 }
-@media(min-width: 769px)(max-width: 992px) {
+@media(min-width: 769px),(max-width: 992px) {
     .hero-section {
         min-height: 70vh;
     }

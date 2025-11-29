@@ -28,11 +28,11 @@ body {
 }
 
 .about-hero-section {
-  height: 70vh; 
+  height: 80vh; 
   background-image: url("https://static.wixstatic.com/media/5a3650_98569a49bd7349629cae03540c7b1c60~mv2.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 00px; /* push image slightly down */
+  background-position: center -90px; /* push image slightly down */
   display: flex;
   align-items: center; /* vertically center text */
 }
