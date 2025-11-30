@@ -49,6 +49,7 @@ body{
 .blog-info{
     flex:1;
     color:#4d3b31;
+    padding: 30px;
 }
 
 /* Top Row */

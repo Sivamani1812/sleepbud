@@ -280,3 +280,8 @@ form {
     text-align: center;
   }
 }
+@media(max-width: 768px) {
+  .contact-form-box .form-heading {
+    text-align: center;
+  }
+}

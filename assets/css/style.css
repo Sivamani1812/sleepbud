@@ -255,6 +255,7 @@ body {
     background-size: cover;
     background-position: right center; /* Bright side mobile ku shift */
     background-attachment: scroll;
+    
   }
 }
 .hero-title {
@@ -266,6 +267,7 @@ body {
   font-weight: 700;
   margin-bottom: 15px;
   padding-top: 250px;
+ 
   
 }
 
@@ -278,7 +280,7 @@ body {
   line-height: 1.4;
 }
 .hero .container {
-  padding-left: 80px;
+  padding-left: 10px;
 }
 
 .hero .container p {
@@ -331,6 +333,7 @@ body {
     text-align: center;
     font-size: 30px;
     line-height: 100%;
+    
   }
   .container {
     width: 100%;
