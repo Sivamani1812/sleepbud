@@ -28,7 +28,7 @@ body {
 }
 
 .about-hero-section {
-  height: 80vh; 
+  height: 60vh; 
   background-image: url("https://static.wixstatic.com/media/5a3650_98569a49bd7349629cae03540c7b1c60~mv2.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,8 +64,12 @@ body {
   }
 
   .about-hero-section .container h2 {
-    font-size: 28px;
+    padding-top: 120px;
+    font-size: 32px;
   }
+  .about-hero-section {
+  height: 40vh; 
+}
 }
 
 /* Small mobile */
@@ -75,15 +79,35 @@ body {
   }
 
   .about-hero-section .container h2 {
-    font-size: 22px;
+    font-size: 36px;
   }
+  .about-hero-section {
+  height: 40vh; 
+}
 }
 
 
-
+ .container {
+        width: 80%;
+        margin: auto;
+      }
+      .about-hero-section .container {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-hero-section .container h2 {
+        font-size: 48px;
+        color: #fff;
+        font-weight: 600;
+      }
 .about-right img {
     width: 100%;
-    min-height: 70vh;
+    min-height: 80vh;
     border-radius: 12px;
 }
 
@@ -129,8 +153,9 @@ body {
     list-style: none;
     padding-left: 0;
 }
-.about-left h4{
-  padding: -10px;
+
+.second-sec .about-left:nth-child(2) {
+   padding: -30px 0px -30px 0px;
 }
 
 .about-left ul li {
@@ -215,6 +240,14 @@ body {
 
     .ab-title {
         margin-bottom: 20px;
+       
+    }
+     .about .ab-title123{
+        font-size: 30px;
+    }
+    .about .ab-title{
+        font-size: 26px;
+       
     }
 }
 
@@ -349,13 +382,7 @@ body {
 /* section 3 */
 
 
-      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Marcellus+SC&family=Niconne&display=swap");
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
       body {
         overflow: auto; /* or scroll */
         scrollbar-width: none; /* Firefox */
@@ -831,7 +858,7 @@ body {
 .about-left p{
   font-size: 16px;
   font-family:"Poppins", sans-serif;
-  font-display: auto;
+  /* font-display: auto; */
   line-height: 1.8;
   letter-spacing: 0;
 }
@@ -849,7 +876,11 @@ body {
   padding-top: 10px;
 
 }
-
+@media screen and (max-width: 768px) {
+  .about-left a {
+    margin: auto;
+  }
+}
 
 
 /* Responsive */
