@@ -24,7 +24,7 @@ body {
 .page {
     max-width: 980px;
     margin: 36px auto;
-    padding: 80px 18px 80px;
+    padding: 80px 18px 20px 18px;
 }
 
 .post-card {
@@ -306,6 +306,10 @@ body {
 }
 
 @media (max-width:700px) {
+     .post-card {
+        padding: 16px;
+        margin-top: 100px;
+    }
     .post-title {
         font-size: 22px
     }
@@ -317,11 +321,26 @@ body {
     .page {
         margin: 20px auto
     }
+    .cta-box{
+        display: block;
+        min-width: 100px;
+        margin: auto;
+      
+    }
+    .cta-box p{
+        padding-bottom: 20px;
+    }
+     .cta-box .btn {
+      margin-left: 60px;
+        
+    }
 }
 
 @media (max-width:420px) {
+    
     .post-card {
-        padding: 16px
+        padding: 30px;
+        margin-top: 100px;
     }
 
     .post-title {
@@ -332,14 +351,12 @@ body {
         font-size: 12px
     }
 }
-
-/* Desktop & Tablet — CTA Visible */
+/* Desktop & Tablet */
 .mobile-cta {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 30px 0px 30px 0px;
-  
+  margin: 30px 0;
 }
 
 .mobile-cta a {
@@ -354,64 +371,18 @@ body {
   transition: 0.25s ease;
 }
 
-/* Mobile Floating CTA */
+/* Mobile — without fixed position */
 @media(max-width:480px){
   .mobile-cta {
-    position: fixed;
-    bottom: 16px;
-    left: 12px;
-    right: 12px;
-    z-index: 9999;
-    margin: 0;
-    pointer-events: auto;
-  }
-
-  .mobile-cta a {
     width: 100%;
-    font-size: 17px;
-    border-radius: 12px;
-    padding: 15px 20px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
-  }
-}
-
-
-
-/* Mobile CTA floating at the bottom */
-@media(max-width:480px){
-  .mobile-cta {
-    position: fixed;
-    left: 12px;
-    right: 12px;
-    bottom: 16px;
-    z-index: 9999;
-    display: flex;
+    margin: 20px 0;
     justify-content: center;
-    pointer-events: auto;
   }
 
   .mobile-cta a {
-    width: 100%;
-    text-align: center;
-    padding: 14px 18px;
+    width: 90%; /* section width match - adjust if needed */
+    font-size: 17px;
+    padding: 15px 20px;
     border-radius: 12px;
-    background: var(--cta);
-    color: #fff;
-    font-weight: 700;
-    font-size: 16px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .mobile-cta a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
-  }
-
-  .mobile-cta a:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   }
 }
-
