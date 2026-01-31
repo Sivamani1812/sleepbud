@@ -216,3 +216,191 @@
     border-radius: 12px;
   }
 }
+
+
+
+/* Age Wise Sleep Table */
+.age-sleep-table-wrapper{
+  margin:28px 0;
+  overflow-x:auto;
+}
+
+.age-sleep-table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border:1px solid #ead7c0;
+  border-radius:10px;
+  overflow:hidden;
+  font-size:15.5px;
+}
+
+.age-sleep-table th{
+  background:#fff3e0;
+  color:#5a3d31;
+  font-weight:700;
+  padding:10px;
+  text-align:center;
+  border-bottom:1px solid #ead7c0;
+}
+
+.age-sleep-table td{
+  padding:18px;
+  color:#3f342f;
+  border-bottom:1px solid #f0e2d4;
+  line-height:1.6;
+  text-align: center;
+}
+
+.age-sleep-table tr:last-child td{
+  border-bottom:none;
+}
+
+/* Link inside table */
+.age-sleep-table a{
+  color:#e1725f;
+  font-weight:600;
+  text-decoration:none;
+}
+.age-sleep-table a:hover{
+  text-decoration:underline;
+}
+
+/* ===== Mobile Card View ===== */
+@media(max-width:600px){
+  .age-sleep-table thead{
+    display:none;
+  }
+
+  .age-sleep-table,
+  .age-sleep-table tbody,
+  .age-sleep-table tr,
+  .age-sleep-table td{
+    display:block;
+    width:100%;
+  }
+
+  .age-sleep-table tr{
+    margin-bottom:16px;
+    border:1px solid #ead7c0;
+    border-radius:10px;
+    background:#fff;
+    padding:10px;
+  }
+
+  .age-sleep-table td{
+    border:none;
+    padding:8px 10px;
+    font-size:15px;
+  }
+
+  .age-sleep-table td::before{
+    content: attr(data-label);
+    display:block;
+    font-weight:600;
+    color:#5a3d31;
+    margin-bottom:2px;
+    font-size:13px;
+  }
+}
+
+
+
+/* --============================ */
+
+a{
+    text-decoration: none;
+}
+.blog-section {
+  padding: 50px 20px;
+  background: #fff7ef;
+  font-family: Arial, sans-serif;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+.blog-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.see-all {
+  text-decoration: none;
+  color: #c97b4f;
+  font-weight: 500;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  padding: 0px 80px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 15px;
+}
+
+.blog-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+.post-title-foot{
+    text-align: center;
+}
+

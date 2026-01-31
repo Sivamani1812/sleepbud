@@ -94,7 +94,7 @@
       }
 
       .footer-policies a:hover {
-        color: #fff;
+        color: var(--accent);
       }
 
       /* ===================== RESPONSIVE ===================== */

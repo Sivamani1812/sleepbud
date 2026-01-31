@@ -1275,6 +1275,7 @@ body {
       .footer-social a {
         color: #fff;
         font-size: 18px;
+        font-weight: 600;
         margin-right: 15px;
       }
 
@@ -1290,7 +1291,7 @@ body {
       }
 
       .footer-bottom p {
-        font-size: 14px;
+        font-size: 15px;
         color: #ccc;
         margin-bottom: 10px;
       }
@@ -1300,14 +1301,15 @@ body {
         text-decoration: none;
       }
       .footer-policies a {
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 600;
         margin: 0 10px;
         color: #ccc;
         text-decoration: none;
       }
 
       .footer-policies a:hover {
-        color: #fff;
+        color: var(--main-color);
       }
 
       /* ===================== RESPONSIVE ===================== */
