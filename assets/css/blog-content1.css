@@ -340,7 +340,7 @@ body {
         padding-bottom: 20px;
     }
      .cta-box .btn {
-      margin-left: 60px;
+      margin-left: 10px;
         
     }
 }
@@ -359,6 +359,7 @@ body {
     .meta-row {
         font-size: 12px
     }
+    
 }
 /* Desktop & Tablet */
 .mobile-cta {

@@ -332,7 +332,7 @@ body {
         padding-bottom: 20px;
     }
      .cta-box .btn {
-      margin-left: 60px;
+      margin-left: 10px;
         
     }
 }
@@ -594,7 +594,7 @@ a{
 /* Mobile */
 @media (max-width: 576px) {
   .blog-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.5fr;
   }
 
   .blog-header {
